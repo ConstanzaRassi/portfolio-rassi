@@ -1,17 +1,21 @@
 import React from "react";
 import "./style.scss";
-import Home from "./components/Home";
+import Home from "./pages/Home";
 import Nav from "./components/Nav";
-import About from "./components/About";
-import Skills from "./components/Skills";
+import About from "./pages/About";
+import Skills from "./pages/Skills";
+import Portfolio from "./pages/Portfolio";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <>
-      <Home />
       <Nav />
+      <Home />
       <About />
       <Skills />
+      <Portfolio />
+      <Footer />
     </>
   );
 }
