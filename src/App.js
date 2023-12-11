@@ -1,22 +1,65 @@
-import React from "react";
+import { ThemeProvider } from "styled-components";
+import { useState } from "react";
+import { darkTheme, lightTheme } from "./utils/Themes.js";
+import Navbar from "./components/Nav.jsx";
 import "./style.scss";
-import Home from "./pages/Home";
-import Nav from "./components/Nav";
-import About from "./pages/About";
+import { BrowserRouter as Router } from "react-router-dom";
+import HeroSection from "./pages/Home.jsx";
 import Skills from "./pages/Skills";
-import Portfolio from "./pages/Portfolio";
+import Projects from "./pages/Projects";
+// import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Experience from "./pages/Experience";
+import Education from "./pages/Education";
+import ProjectDetails from "./components/ProjectDetail";
+import styled from "styled-components";
 
+const Body = styled.div`
+  background-color: ${({ theme }) => theme.bg};
+  width: 100%;
+  overflow-x: hidden;
+`;
+
+const Wrapper = styled.div`
+  background: linear-gradient(
+      38.73deg,
+      rgba(204, 0, 187, 0.15) 0%,
+      rgba(201, 32, 184, 0) 50%
+    ),
+    linear-gradient(
+      141.27deg,
+      rgba(0, 70, 209, 0) 50%,
+      rgba(0, 70, 209, 0.15) 100%
+    );
+  width: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 98%, 0 100%);
+`;
 function App() {
+  const [darkMode, setDarkMode] = useState(true);
+  const [openModal, setOpenModal] = useState({ state: false, project: null });
+  console.log(openModal);
   return (
-    <>
-      <Nav />
-      <Home />
-      <About />
-      <Skills />
-      <Portfolio />
-      <Footer />
-    </>
+    <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
+      <Router>
+        <Navbar />
+        <Body>
+          <HeroSection />
+          <Wrapper>
+            <Skills />
+            <Experience />
+          </Wrapper>
+          <Projects openModal={openModal} setOpenModal={setOpenModal} />
+          <Wrapper>
+            <Education />
+            {/* <Contact /> */}
+          </Wrapper>
+          <Footer />
+          {openModal.state && (
+            <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
+          )}
+        </Body>
+      </Router>
+    </ThemeProvider>
   );
 }
 
