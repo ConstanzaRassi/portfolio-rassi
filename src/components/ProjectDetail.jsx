@@ -206,7 +206,14 @@ const index = ({ openModal, setOpenModal }) => {
               <Tag>{tag}</Tag>
             ))}
           </Tags>
-          <Desc>{project?.description}</Desc>
+          <Desc>
+            {project?.description.split("\n").map((text, index) => (
+              <React.Fragment key={index}>
+                {text}
+                <br />
+              </React.Fragment>
+            ))}
+          </Desc>
           {project.member && (
             <>
               <Label>Members</Label>

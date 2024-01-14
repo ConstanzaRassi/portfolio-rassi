@@ -1,8 +1,6 @@
 import React from "react";
 import HeroBgAnimation from "../components/HomeAnimation";
-import HeroImg from "../assets/home.png";
 import { Bio } from "../data/constants";
-
 import styled from "styled-components";
 // import _default from "../themes/default";
 
@@ -223,13 +221,13 @@ const HeroSection = () => {
               I am a<Span>Developer</Span>
             </TextLoop>
             <SubTitle>{Bio.description}</SubTitle>
-            <ResumeButton href={Bio.resume} target="display">
+            <ResumeButton href={Bio.cv} target="_blank">
               Check Resume
             </ResumeButton>
           </HeroLeftContainer>
 
           <HeroRightContainer id="Right">
-            <Img src={HeroImg} alt="hero-image" />
+            <Img src={Bio.image} alt="hero-image" />
           </HeroRightContainer>
         </HeroInnerContainer>
       </HeroContainer>

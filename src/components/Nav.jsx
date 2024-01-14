@@ -1,10 +1,9 @@
 import React from "react";
-import { DiCssdeck } from "react-icons/di";
 import { FaBars } from "react-icons/fa";
 import { Bio } from "../data/constants";
 import { Close, CloseRounded } from "@mui/icons-material";
 import { useTheme } from "styled-components";
-
+import { MdLogoDev } from "react-icons/md";
 import { Link as LinkR } from "react-router-dom";
 import styled from "styled-components";
 import _default from "../themes/default";
@@ -238,7 +237,7 @@ const Navbar = () => {
               cursor: "pointer",
             }}
           >
-            <DiCssdeck size="3rem" /> <Span>Portfolio</Span>
+            <MdLogoDev size="3rem" /> <Span>Portfolio</Span>
           </a>
         </NavLogo>
         <MobileIcon>
