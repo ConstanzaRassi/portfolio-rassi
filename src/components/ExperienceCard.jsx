@@ -151,7 +151,16 @@ const ExperienceCard = ({ experience }) => {
         </Body>
       </Top>
       <Description>
-        {experience?.desc && <Span>{experience?.desc}</Span>}
+        {experience?.desc && (
+          <Span>
+            {experience?.desc.split("\n").map((text, index) => (
+              <React.Fragment key={index}>
+                {text}
+                <br />
+              </React.Fragment>
+            ))}{" "}
+          </Span>
+        )}
         {experience?.skills && experience.skills.length > 0 && (
           <>
             <br />
