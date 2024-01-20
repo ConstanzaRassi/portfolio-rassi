@@ -1,6 +1,8 @@
 import React from "react";
 import HeroBgAnimation from "../components/HomeAnimation";
 import { Bio } from "../data/constants";
+import cvpdf from "../data/CV-RASSI.pdf";
+import me from "../assets/me.JPEG";
 import styled from "styled-components";
 // import _default from "../themes/default";
 
@@ -204,8 +206,11 @@ const ResumeButton = styled.a`
     } 
 
 `;
-
 const HeroSection = () => {
+  const openPdfInNewTab = (pdfPath) => {
+    window.open(pdfPath, "_blank");
+  };
+
   return (
     <div id="about">
       <HeroContainer>
@@ -221,13 +226,13 @@ const HeroSection = () => {
               I am a<Span>Developer</Span>
             </TextLoop>
             <SubTitle>{Bio.description}</SubTitle>
-            <ResumeButton href={Bio.cv} target="_blank">
+            <ResumeButton onClick={() => openPdfInNewTab(cvpdf)}>
               Check Resume
             </ResumeButton>
           </HeroLeftContainer>
 
           <HeroRightContainer id="Right">
-            <Img src={Bio.image} alt="hero-image" />
+            <Img src={me} alt="hero-image" />
           </HeroRightContainer>
         </HeroInnerContainer>
       </HeroContainer>
