@@ -19,31 +19,33 @@ export const skills = [
     skills: [
       {
         name: "C#",
-        image: "https://www.cdnlogo.com/logos/c/27/c.svg",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/c%23-logo.svg?alt=media&token=c9393041-83ab-4bc0-ab26-0ef690675605",
       },
       {
         name: ".NET",
         image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Microsoft_.NET_logo.svg/2048px-Microsoft_.NET_logo.svg.png",
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/dotnet-logo.png?alt=media&token=b32f1a64-4695-4d7f-b087-080f55452c72",
       },
       {
         name: "Microservices",
-        image: "https://cdn-icons-png.flaticon.com/512/6358/6358046.png",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/microservices-logo.png?alt=media&token=c52c7e9a-6ac4-4063-91f4-08a2fe07c250",
       },
       {
         name: "Java",
         image:
-          "https://cdn.icon-icons.com/icons2/2415/PNG/512/java_original_wordmark_logo_icon_146459.png",
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/java-logo.png?alt=media&token=e5b27f98-9dcc-4323-a034-937449946825",
       },
       {
         name: "RabbitMQ",
         image:
-          "https://seeklogo.com/images/R/rabbitmq-logo-25641A76DE-seeklogo.com.png",
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/rabbitmq-logo.png?alt=media&token=4a3c4a77-99dc-4482-bb9e-1cd0328966b1",
       },
       {
         name: "Python",
         image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Python_logo_01.svg/640px-Python_logo_01.svg.png",
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/python-logo.png?alt=media&token=b93ae0c2-4e50-4204-9922-60d287f9b810",
       },
     ],
   },
@@ -52,30 +54,34 @@ export const skills = [
     skills: [
       {
         name: "SQL Server",
-        image: "https://img.icons8.com/color/512/microsoft-sql-server.png",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/sqlserver-logo.png?alt=media&token=8b3123b6-4ac2-4075-9549-f7f1ddc59cae",
       },
       {
-        name: "Redis",
+        name: "Firebase",
         image:
-          "https://static-00.iconduck.com/assets.00/redis-plain-icon-2048x1748-fmvimw1g.png",
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/firebase-logo.png?alt=media&token=58c038e9-552d-414a-93e7-163c0cf9282c",
       },
+
       {
         name: "PostgreSQL",
-        image: "https://www.postgresql.org/media/img/about/press/elephant.png",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/postgresql-logo.png?alt=media&token=01f1ac25-b7e0-473f-b7f6-f6427f9b724c",
       },
       {
         name: "MongoDB",
         image:
-          "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/mongodb-logo.png?alt=media&token=6aa9abea-3e85-45b6-ad52-7ef658f3e89b",
       },
       {
-        name: "Firebase",
-        image: "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg",
+        name: "Redis",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/redis-logo.png?alt=media&token=d911a559-1c50-47b6-adbd-4e4abf37b723",
       },
       {
         name: "MySQL",
         image:
-          "https://1000marcas.net/wp-content/uploads/2020/11/MySQL-logo.png",
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/mysql-logo.png?alt=media&token=4937a1b8-6b54-4696-abf3-51b770424c40",
       },
     ],
   },
@@ -85,30 +91,32 @@ export const skills = [
       {
         name: "React",
         image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1150px-React-icon.svg.png",
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/react-logo.png?alt=media&token=a4f2a540-df6d-4a96-9ba6-72050ef7f683",
       },
       {
         name: "Javascript",
         image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png",
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/javascript-logo.png?alt=media&token=265d74ae-9db2-41c2-bb4f-89983b2b61aa",
       },
       {
         name: "HTML",
-        image: "https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/html-logo.png?alt=media&token=7bc63ddc-94bc-4c56-9b15-532a107f7b4e",
       },
       {
         name: "CSS",
-        image: "https://logospng.org/download/css-3/logo-css-3-2048.png",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/css-logo.png?alt=media&token=af6d614b-c926-4ae6-9b66-496e528cf19f",
       },
       {
         name: "Bootstrap",
         image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1280px-Bootstrap_logo.svg.png",
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/bootstrap-logo.png?alt=media&token=f4549183-fe72-4dda-97a2-9b0f7d158a83",
       },
       {
         name: "Angular",
         image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png",
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/angular-logo.png?alt=media&token=ac498c49-d41e-45de-9903-64f39128bdeb",
       },
     ],
   },
@@ -118,42 +126,47 @@ export const skills = [
       {
         name: "Git",
         image:
-          "https://camo.githubusercontent.com/fbfcb9e3dc648adc93bef37c718db16c52f617ad055a26de6dc3c21865c3321d/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6769742d73636d2f6769742d73636d2d69636f6e2e737667",
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/git-logo.png?alt=media&token=391118ba-1896-40f3-87b1-b5e20080c48a",
       },
       {
         name: "GitHub",
         image:
-          "https://icones.pro/wp-content/uploads/2021/06/icone-github-violet.png",
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/github-logo.png?alt=media&token=c6848599-759b-40f2-987c-a3940865e362",
       },
       {
         name: "Docker",
         image:
-          "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg",
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/docker-logo.png?alt=media&token=78f454b6-73d2-46fe-9cd2-e1e4e9c5ca07",
       },
       {
         name: "Linux",
         image:
-          "https://1000logos.net/wp-content/uploads/2017/03/LINUX-LOGO.png",
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/linux-logo.png?alt=media&token=cce4a064-3f85-4e35-9f4e-83f50bf3dada",
       },
       {
         name: "VS Code",
         image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png?20210804221519",
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/vscode-logo.png?alt=media&token=3c933fc9-92e8-4dfb-90a1-72fbc544e878",
+      },
+      {
+        name: "Visual Studio",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/vsstudio-logo.png?alt=media&token=dce3480a-7ce0-4aaa-a20a-05d3d2118666",
       },
       {
         name: "Postman",
         image:
-          "https://camo.githubusercontent.com/93b32389bf746009ca2370de7fe06c3b5146f4c99d99df65994f9ced0ba41685/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f676574706f73746d616e2f676574706f73746d616e2d69636f6e2e737667",
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/postman-logo.svg?alt=media&token=ec5437fc-4f67-4114-95b4-a4d772e96e84",
       },
       {
         name: "Studio3T",
         image:
-          "https://studio3t.com/wp-content/uploads/2020/06/cropped-favicon-512x512-1.png",
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/studio3t-logo.png?alt=media&token=0caef284-9623-4aa8-bb91-5f19b6f24d59",
       },
       {
         name: "Jira",
         image:
-          "https://z6n9b7j4.rocketcdn.me/wp-content/uploads/2023/08/Jira-Icon-Website.png",
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/jira-logo.png?alt=media&token=7a033d42-9bd9-4837-ad68-f45d11ad079c",
       },
     ],
   },
@@ -166,7 +179,7 @@ export const experiences = [
     role: ".NET Developer",
     company: "Juan Toselli International Tours",
     date: "Feb 2022 - Present",
-    desc: "Backend developer with a role as a .NET developer, integrating provider's APIs and designing tool-specific code to meet project requirement.",
+    desc: "Back-end developer with a .NET focus. My responsibilities have included:\n· Leading projects for integrating API providers into the company's system.\n· Implementing payment platforms, e.g. Binance.\n· Designing and creating SQL databases.\n· Crafting scripts for scheduled tasks using JavaScript and MongoDB.\n· Creating and maintaining Microservices.\n· Participating in front-end projects using Angular.",
     skills: [
       ".NET",
       "Microservices",
