@@ -253,6 +253,7 @@ const Navbar = () => {
           <NavLink href="#experience">Experience</NavLink>
           <NavLink href="#projects">Projects</NavLink>
           <NavLink href="#education">Education</NavLink>
+          <NavLink href="#certifications">Certifications</NavLink>
         </NavItems>
         <ButtonContainer>
           <GitHubButton href={Bio.github} target="_blank">
@@ -300,6 +301,14 @@ const Navbar = () => {
               }}
             >
               Education
+            </MobileLink>
+            <MobileLink
+              href="#certifications"
+              onClick={() => {
+                setIsOpen(!isOpen);
+              }}
+            >
+              Certifications
             </MobileLink>
             <GitHubButton
               style={{
