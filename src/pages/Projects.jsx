@@ -13,7 +13,7 @@ import {
 import ProjectCard from "../components/ProjectCard";
 import { projects } from "../data/constants";
 
-const Projects = ({ openModal, setOpenModal }) => {
+const Projects = ({ openModalProject, setOpenModalProject }) => {
   const [toggle, setToggle] = useState("all");
   return (
     <Container id="projects">
@@ -70,8 +70,8 @@ const Projects = ({ openModal, setOpenModal }) => {
             projects.map((project) => (
               <ProjectCard
                 project={project}
-                openModal={openModal}
-                setOpenModal={setOpenModal}
+                openModalProject={openModalProject}
+                setOpenModalProject={setOpenModalProject}
               />
             ))}
           {projects
@@ -79,8 +79,8 @@ const Projects = ({ openModal, setOpenModal }) => {
             .map((project) => (
               <ProjectCard
                 project={project}
-                openModal={openModal}
-                setOpenModal={setOpenModal}
+                openModalProject={openModalProject}
+                setOpenModalProject={setOpenModalProject}
               />
             ))}
         </CardContainer>

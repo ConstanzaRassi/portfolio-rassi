@@ -180,12 +180,12 @@ const Button = styled.a`
   }
 `;
 
-const index = ({ openModal, setOpenModal }) => {
-  const project = openModal?.project;
+const index = ({ openModalProject, setOpenModalProject }) => {
+  const project = openModalProject?.project;
   return (
     <Modal
       open={true}
-      onClose={() => setOpenModal({ state: false, project: null })}
+      onClose={() => setOpenModalProject({ state: false, project: null })}
     >
       <Container>
         <Wrapper>
@@ -196,7 +196,7 @@ const index = ({ openModal, setOpenModal }) => {
               right: "20px",
               cursor: "pointer",
             }}
-            onClick={() => setOpenModal({ state: false, project: null })}
+            onClick={() => setOpenModalProject({ state: false, project: null })}
           />
           <Image src={project?.image} />
           <Title>{project?.title}</Title>

@@ -11,7 +11,9 @@ import Projects from "./pages/Projects";
 import Footer from "./components/Footer";
 import Experience from "./pages/Experience";
 import Education from "./pages/Education";
+import Certifications from "./pages/Certifications";
 import ProjectDetails from "./components/ProjectDetail";
+import CertificationDetails from "./components/CertificationDetail";
 import styled from "styled-components";
 
 const Body = styled.div`
@@ -36,7 +38,14 @@ const Wrapper = styled.div`
 `;
 function App() {
   const [darkMode, setDarkMode] = useState(true);
-  const [openModal, setOpenModal] = useState({ state: false, project: null });
+  const [openModalProject, setOpenModalProject] = useState({
+    state: false,
+    project: null,
+  });
+  const [openModalCert, setOpenModalCert] = useState({
+    state: false,
+    certification: null,
+  });
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <Router>
@@ -47,15 +56,31 @@ function App() {
             <Skills />
             <Experience />
           </Wrapper>
-          <Projects openModal={openModal} setOpenModal={setOpenModal} />
+          <Projects
+            openModalProject={openModalProject}
+            setOpenModalProject={setOpenModalProject}
+          />
+          {openModalProject.state && (
+            <ProjectDetails
+              openModalProject={openModalProject}
+              setOpenModalProject={setOpenModalProject}
+            />
+          )}
           <Wrapper>
             <Education />
             {/* <Contact /> */}
           </Wrapper>
-          <Footer />
-          {openModal.state && (
-            <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
+          <Certifications
+            openModalCert={openModalCert}
+            setOpenModalCert={setOpenModalCert}
+          />
+          {openModalCert.state && (
+            <CertificationDetails
+              openModalCert={openModalCert}
+              setOpenModalCert={setOpenModalCert}
+            />
           )}
+          <Footer />
         </Body>
       </Router>
     </ThemeProvider>
