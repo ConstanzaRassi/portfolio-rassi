@@ -58,6 +58,11 @@ export const skills = [
           "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/sqlserver-logo.png?alt=media&token=8b3123b6-4ac2-4075-9549-f7f1ddc59cae",
       },
       {
+        name: "MongoDB",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/mongodb-logo.png?alt=media&token=6aa9abea-3e85-45b6-ad52-7ef658f3e89b",
+      },
+      {
         name: "Firebase",
         image:
           "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/firebase-logo.png?alt=media&token=58c038e9-552d-414a-93e7-163c0cf9282c",
@@ -68,11 +73,7 @@ export const skills = [
         image:
           "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/postgresql-logo.png?alt=media&token=01f1ac25-b7e0-473f-b7f6-f6427f9b724c",
       },
-      {
-        name: "MongoDB",
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/mongodb-logo.png?alt=media&token=6aa9abea-3e85-45b6-ad52-7ef658f3e89b",
-      },
+
       {
         name: "Redis",
         image:
@@ -118,6 +119,16 @@ export const skills = [
         image:
           "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/angular-logo.png?alt=media&token=ac498c49-d41e-45de-9903-64f39128bdeb",
       },
+      {
+        name: "TypeScript",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/typescript-logo.png?alt=media&token=ca521f2a-953e-4892-b204-ec5f4f2889d4",
+      },
+      // {
+      //   name: "Vue",
+      //   image:
+      //     "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/vue-logo.png?alt=media&token=63ae32a6-4990-456a-8ea6-38fd53cbe166",
+      // },
     ],
   },
   {
@@ -168,6 +179,11 @@ export const skills = [
         image:
           "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/jira-logo.png?alt=media&token=7a033d42-9bd9-4837-ad68-f45d11ad079c",
       },
+      {
+        name: "Jenkins",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/jenkins-logo.png?alt=media&token=a8f97bb8-e2bb-4d3e-83ad-ad12bde46e5c",
+      },
     ],
   },
 ];
@@ -175,21 +191,32 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
+    img: "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/shifta-logo.png?alt=media&token=f79015c7-624e-44c6-bd91-57b566ea7c9b",
+    role: "Software Engineer",
+    company: "SHIFTA",
+    date: "Apr 2024 - Present",
+    desc: "Software engineer experienced in .NET, SQL, and React technologies.",
+    skills: [".NET", "Microservices", "SQL"],
+  },
+  {
+    id: 0,
     img: "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/jt-logo.jpg?alt=media&token=2b79f9f4-70b5-48c6-976a-25f0b3cbbc6b",
     role: ".NET Developer",
     company: "Juan Toselli International Tours",
-    date: "Feb 2022 - Present",
-    desc: "Back-end developer with a .NET focus. My responsibilities have included:\n· Leading projects for integrating API providers into the company's system.\n· Implementing payment platforms, e.g. Binance.\n· Designing and creating SQL databases.\n· Crafting scripts for scheduled tasks using JavaScript and MongoDB.\n· Creating and maintaining Microservices.\n· Participating in front-end projects using Angular.",
+    date: "Feb 2022 - Mar 2024",
+    desc: "Back-end developer with a .NET focus. My responsibilities have included:\n· Leading projects for the integration of supplier Web Services (SOAP/Rest) into the company's system.\n· Creating and maintaining APIs within a Microservices architecture.\n· Designing and creating SQL databases.\n· Crafting scripts for scheduled tasks using JavaScript and MongoDB. \n· Implementing payment platforms, e.g. Binance.\n· Collaborating on front-end projects using Angular.",
     skills: [
       ".NET",
       "Microservices",
       "MongoDB",
-      "Digital Ocean",
       "SQL",
       "API",
+      "Web Services",
+      "Digital Ocean",
       "Nginx",
       "JavaScript",
       "Linux",
+      "Angular",
     ],
   },
   {
@@ -219,11 +246,11 @@ export const education = [
     school: "National Technological University",
     date: "Feb 2020 - Jul 2022",
     grade: "8.67 CGPA",
-    desc: "Finished by acquiring knowledge in the fundamental pillars of SQL database management, object-oriented programming with C# and Java, basic principles of web programming (using Bootstrap) and understanding of company accounting and administrative systems.",
+    desc: "Completed by acquiring knowledge in the fundamental pillars of SQL database management, object-oriented programming with C# and Java, basic principles of web programming (using Bootstrap) and understanding of company accounting and administrative systems.",
     degree: "Technical Degree in Programming",
   },
   {
-    id: 2,
+    id: 3,
     img: "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/sanjose-logo.png?alt=media&token=7cb4c293-9292-493f-816d-c8203b0bc449",
     school: "San Jose School, Cordoba",
     date: "Mar 2008 - Dec 2019",
@@ -239,7 +266,7 @@ export const projects = [
     title: "Vitamove",
     date: "Jan 2022 - Jul 2022",
     description:
-      "Vitamove is the project I developed to present my university thesis in 2022. It is a website for a chain of gyms, where you can log in as an administrator or as a student. Various graphics and tables were designed for the administrator interface to manage data and statistics. For the student interface, it includes basic functionalities such as class registration and viewing administrative status. Additionally, students can make payments for a plan using the Mercado Pago platform. As a final feature, there is an interactive 3D model of the human body with different muscle groups. This allows users to select specific muscle groups they want to work on and create a routine tailored to those muscles.",
+      "Vitamove is the project I developed to present my university thesis in 2022. It is a website for a chain of gyms, where you can log in as an administrator or as a student. Various graphics and tables were designed for the administrator interface to manage data and statistics.\nFor the student interface, it includes basic functionalities such as class registration and viewing administrative status. Additionally, students can make payments for a plan using the Mercado Pago platform.\n As a final feature, there is an interactive 3D model of the human body with different muscle groups. This allows users to select specific muscle groups they want to work on and create a routine tailored to those muscles.",
     image:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/vitamove-bg.png?alt=media&token=9a08a841-abee-4167-ab8d-70bb155180d7",
     tags: [
@@ -290,10 +317,25 @@ export const projects = [
     description:
       "English Tutors Arg is a customized project tailored for an English academy in Argentina. Beyond just providing class and fares information, the client wanted a platform with additional content like vocabulary, phrases, and expressions. They also requested an exercises section to appeal to potential users.\nTo address the teachers' need for assessing the proficiency levels of prospective students, an exam section was incorporated. This assessment, implemented through a Google Form, allows for a thorough evaluation. The result is a website that serves not only as an informative resource but also as an engaging space where learning and evaluation coexist",
     image:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/englishtutors-bg.png?alt=media&token=b35d63f4-862c-4eb2-bb3b-5bbda9a43372",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/englishtutors-bg.png?alt=media&token=3070546e-512d-40ee-abbf-2176c5b56b67",
     tags: ["Angular"],
     category: "front end",
     github: "https://github.com/NataliaTodesco/english-tutors",
     webapp: "https://elegant-euler-9b518f.netlify.app/",
+  },
+];
+
+export const certifications = [
+  {
+    id: 0,
+    title: "Scrum Fundamentals",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/scrum-certification.jpg?alt=media&token=c69dc241-b373-4e98-bc09-74462b701c14",
+  },
+  {
+    id: 1,
+    title: "Git Basics",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/git-certification.jpg?alt=media&token=d090ee6d-e261-4912-a70e-c6db5d811b33",
   },
 ];
