@@ -72,7 +72,7 @@ const Projects = ({ openModalCert, setOpenModalCert }) => {
     <Container id="certifications">
       <Wrapper>
         <Title>Certifications</Title>
-        <Desc>Certification I have obtained in the last years</Desc>
+        <Desc>Certifications I acquired in recent years</Desc>
         <CardContainer>
           {certifications.map((certification) => (
             <CertificationCard

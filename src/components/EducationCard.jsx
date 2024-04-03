@@ -88,7 +88,7 @@ const Body = styled.div`
   flex-direction: column;
 `;
 
-const Name = styled.div`
+const Degree = styled.div`
   font-size: 18px;
   font-weight: 600;
   color: ${({ theme }) => theme.text_primary + 99};
@@ -97,7 +97,7 @@ const Name = styled.div`
   }
 `;
 
-const Degree = styled.div`
+const School = styled.div`
   font-size: 14px;
   font-weight: 500;
   color: ${({ theme }) => theme.text_secondary + 99};
@@ -130,8 +130,8 @@ const EducationCard = ({ education }) => {
       <Top>
         <Image src={education.img} />
         <Body>
-          <Name>{education.school}</Name>
           <Degree>{education.degree}</Degree>
+          <School>{education.school}</School>
           <Date>{education.date}</Date>
         </Body>
       </Top>
