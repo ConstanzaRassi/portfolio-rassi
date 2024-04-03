@@ -179,11 +179,11 @@ export const skills = [
         image:
           "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/jira-logo.png?alt=media&token=7a033d42-9bd9-4837-ad68-f45d11ad079c",
       },
-      {
-        name: "Jenkins",
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/jenkins-logo.png?alt=media&token=a8f97bb8-e2bb-4d3e-83ad-ad12bde46e5c",
-      },
+      // {
+      //   name: "Jenkins",
+      //   image:
+      //     "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/jenkins-logo.png?alt=media&token=a8f97bb8-e2bb-4d3e-83ad-ad12bde46e5c",
+      // },
     ],
   },
 ];
@@ -195,7 +195,7 @@ export const experiences = [
     role: "Software Engineer",
     company: "SHIFTA",
     date: "Apr 2024 - Present",
-    desc: "Software engineer experienced in .NET, SQL, and React technologies.",
+    desc: "Software engineer experienced in .NET, SQL and React technologies.",
     skills: [".NET", "Microservices", "SQL"],
   },
   {
@@ -225,7 +225,7 @@ export const experiences = [
     role: "QA Internship",
     company: "Globant",
     date: "Sep 2019 - Oct 2019",
-    desc: "Completed an internship supporting the QA and testing team by performing various simple tasks to aid their daily operations",
+    desc: "Completed an internship supporting the QA and testing team by performing various simple tasks to aid their daily operations.",
     skills: [],
   },
 ];
@@ -256,7 +256,7 @@ export const education = [
     date: "Mar 2008 - Dec 2019",
     grade: "88.2%",
     desc: "Completed with a specialization in humanities at a educational institution, including grades K-12",
-    degree: "Elementary and secondary education",
+    degree: "Elementary / High School",
   },
 ];
 
