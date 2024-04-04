@@ -195,7 +195,7 @@ export const experiences = [
     role: "Software Engineer",
     company: "SHIFTA",
     date: "Apr 2024 - Present",
-    desc: "Software engineer experienced in .NET, SQL and React technologies.",
+    desc: "Software engineer experienced in .NET",
     skills: [".NET", "Microservices", "SQL"],
   },
   {

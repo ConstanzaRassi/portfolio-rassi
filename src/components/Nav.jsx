@@ -235,6 +235,7 @@ const Navbar = () => {
               color: "white",
               marginBottom: "20;",
               cursor: "pointer",
+              textDecoration: "none",
             }}
           >
             <MdLogoDev size="3rem" /> <Span>Portfolio</Span>
