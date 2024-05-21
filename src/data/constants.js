@@ -139,11 +139,11 @@ export const skills = [
         image:
           "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/git-logo.png?alt=media&token=391118ba-1896-40f3-87b1-b5e20080c48a",
       },
-      {
-        name: "GitHub",
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/github-logo.png?alt=media&token=c6848599-759b-40f2-987c-a3940865e362",
-      },
+      // {
+      //   name: "GitHub",
+      //   image:
+      //     "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/github-logo.png?alt=media&token=c6848599-759b-40f2-987c-a3940865e362",
+      // },
       {
         name: "Docker",
         image:
@@ -155,15 +155,35 @@ export const skills = [
           "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/linux-logo.png?alt=media&token=cce4a064-3f85-4e35-9f4e-83f50bf3dada",
       },
       {
-        name: "VS Code",
+        name: "Azure",
         image:
-          "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/vscode-logo.png?alt=media&token=3c933fc9-92e8-4dfb-90a1-72fbc544e878",
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/azure-logo.png?alt=media&token=0895c272-e7af-4aef-8b07-61a13c03a87f",
       },
-      {
-        name: "Visual Studio",
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/vsstudio-logo.png?alt=media&token=dce3480a-7ce0-4aaa-a20a-05d3d2118666",
-      },
+      // {
+      //   name: "Kubernetes",
+      //   image:
+      //     "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/kubernetes-logo.png?alt=media&token=06b5f161-3092-4a61-ad1e-7f0d3412b407",
+      // },
+      // {
+      //   name: "AWS",
+      //   image:
+      //     "https://download.logo.wine/logo/Amazon_Web_Services/Amazon_Web_Services-Logo.wine.png",
+      // },
+      // {
+      //   name: "SignalR",
+      //   image:
+      //     "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/signalr-logo.svg?alt=media&token=20baa884-cf82-47d4-9d53-079c3a76b959",
+      // },
+      // {
+      //   name: "VS Code",
+      //   image:
+      //     "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/vscode-logo.png?alt=media&token=3c933fc9-92e8-4dfb-90a1-72fbc544e878",
+      // },
+      // {
+      //   name: "Visual Studio",
+      //   image:
+      //     "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/vsstudio-logo.png?alt=media&token=dce3480a-7ce0-4aaa-a20a-05d3d2118666",
+      // },
       {
         name: "Postman",
         image:
