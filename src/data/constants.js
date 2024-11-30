@@ -139,36 +139,26 @@ export const skills = [
         image:
           "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/git-logo.png?alt=media&token=391118ba-1896-40f3-87b1-b5e20080c48a",
       },
-      // {
-      //   name: "GitHub",
-      //   image:
-      //     "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/github-logo.png?alt=media&token=c6848599-759b-40f2-987c-a3940865e362",
-      // },
       {
         name: "Docker",
         image:
           "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/docker-logo.png?alt=media&token=78f454b6-73d2-46fe-9cd2-e1e4e9c5ca07",
       },
       {
-        name: "Linux",
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/linux-logo.png?alt=media&token=cce4a064-3f85-4e35-9f4e-83f50bf3dada",
-      },
-      {
         name: "Azure",
         image:
           "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/azure-logo.png?alt=media&token=0895c272-e7af-4aef-8b07-61a13c03a87f",
       },
-      // {
-      //   name: "Kubernetes",
-      //   image:
-      //     "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/kubernetes-logo.png?alt=media&token=06b5f161-3092-4a61-ad1e-7f0d3412b407",
-      // },
-      // {
-      //   name: "AWS",
-      //   image:
-      //     "https://download.logo.wine/logo/Amazon_Web_Services/Amazon_Web_Services-Logo.wine.png",
-      // },
+      {
+        name: "Kubernetes",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/kubernetes-logo.png?alt=media&token=06b5f161-3092-4a61-ad1e-7f0d3412b407",
+      },
+      {
+        name: "AWS",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/storage-general-1d716.appspot.com/o/logos%2Faws-logo.png?alt=media&token=d1266233-1d4a-4397-b790-35812a6ce838",
+      },
       // {
       //   name: "SignalR",
       //   image:
@@ -255,9 +245,8 @@ export const education = [
     id: 0,
     img: "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/unc-logo.png?alt=media&token=7fb9684c-a77b-4d36-8f41-af7f88d87e25",
     school: "National University of Cordoba",
-    date: "Jan 2024 - Present",
-    // grade: "8.67 CGPA",
-    desc: "The diploma addresses the comprehensive development of software, including FrontEnd, BackEnd, databases, security, and operation. It covers key concepts in the ICT industry, such as continuous integration and continuous delivery using Docker and Kubernetes.",
+    date: "Jan 2024 - Oct 2024",
+    desc: "The diploma addresses the comprehensive cloud software development (with a focus on AWS services) including security, database, monitoring tools, IAC. It covers key concepts in the ICT industry, such as continuous integration and continuous delivery using Docker and Kubernetes.",
     degree: "Diploma in DevOps",
   },
   {
@@ -357,5 +346,11 @@ export const certifications = [
     title: "Git Basics",
     image:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/git-certification.jpg?alt=media&token=d090ee6d-e261-4912-a70e-c6db5d811b33",
+  },
+  {
+    id: 3,
+    title: "Devops Diploma",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/storage-general-1d716.appspot.com/o/images%2Fcert.jpg?alt=media&token=de96ad6f-ea70-4e5f-b1dd-e8a9518802de",
   },
 ];

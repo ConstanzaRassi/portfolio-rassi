@@ -238,7 +238,7 @@ const Navbar = () => {
               textDecoration: "none",
             }}
           >
-            <MdLogoDev size="3rem" /> <Span>Portfolio</Span>
+            <MdLogoDev size="3rem" /> <Span>Constanza</Span>
           </a>
         </NavLogo>
         <MobileIcon>
