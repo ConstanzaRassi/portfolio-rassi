@@ -1,7 +1,7 @@
 import React from "react";
 import HeroBgAnimation from "../components/HomeAnimation";
 import { Bio } from "../data/constants";
-import cvpdf from "../data/CV-RASSI.pdf";
+import cvpdf from "../data/RASSI-Cv.pdf";
 import me from "../assets/me.JPEG";
 import styled from "styled-components";
 // import _default from "../themes/default";
