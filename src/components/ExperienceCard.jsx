@@ -25,12 +25,13 @@ const Description = styled.div`
 `;
 
 const Span = styled.span`
-  overflow: hidden;
-  display: -webkit-box;
+  display: block;
   max-width: 100%;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  text-overflow: ellipsis;
+  overflow: visible;
+  -webkit-line-clamp: unset;
+  -webkit-box-orient: unset;
+  text-overflow: unset;
+  white-space: pre-wrap;
 `;
 
 const Card = styled.div`
