@@ -43,9 +43,9 @@ export const skills = [
           "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/rabbitmq-logo.png?alt=media&token=4a3c4a77-99dc-4482-bb9e-1cd0328966b1",
       },
       {
-        name: "Python",
+        name: "Quartz",
         image:
-          "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/python-logo.png?alt=media&token=b93ae0c2-4e50-4204-9922-60d287f9b810",
+          "https://firebasestorage.googleapis.com/v0/b/storage-general-1d716.appspot.com/o/logos%2Fquartz_logo.png?alt=media&token=8b630062-9687-4798-ac31-a4062669f598",
       },
     ],
   },
@@ -205,7 +205,7 @@ export const experiences = [
     role: "Software Engineer",
     company: "SHIFTA",
     date: "Apr 2024 - Present",
-    desc: "Software engineer experienced in .NET. My responsibilities include: \n· Creation and development of APIs with microservice architecture.\n· Creating and maintaining APIs within a Microservices architecture.\n· Design and creation of SQL databases.",
+    desc: "Software engineer experienced in .NET. My responsibilities include: \n· Development and implementation of APIs with microservice architecture.\n· Design and creation of SQL databases.\n· Job scheduling with Quartz.",
     skills: [".NET", "Microservices", "SQL", "Quartz", "React", "Azure"],
   },
   {
