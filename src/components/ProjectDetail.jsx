@@ -160,21 +160,34 @@ const Button = styled.a`
   padding: 12px 16px;
   border-radius: 8px;
   background-color: ${({ theme }) => theme.primary};
+  text-decoration: none;
+  transition: all 0.5s ease;
+  cursor: pointer;
+
   ${({ dull, theme }) =>
     dull &&
     `
         background-color: ${theme.bgLight};
         color: ${theme.text_secondary};
         &:hover {
-            background-color: ${({ theme }) => theme.bg + 99};
+            background-color: ${theme.bg + 99};
         }
     `}
-  cursor: pointer;
-  text-decoration: none;
-  transition: all 0.5s ease;
+
   &:hover {
     background-color: ${({ theme }) => theme.primary + 99};
   }
+
+  ${({ disabled }) =>
+    disabled &&
+    `
+        pointer-events: none;  // Deshabilita cualquier interacción
+        opacity: 0.5;          // Hace que se vea deshabilitado
+        cursor: default;       // Mantiene el cursor normal sin efectos
+        background-color: ${({ theme }) =>
+          theme.primary}; // Mantiene su color original sin hover
+    `}
+
   @media only screen and (max-width: 600px) {
     font-size: 12px;
   }
@@ -214,40 +227,19 @@ const index = ({ openModalProject, setOpenModalProject }) => {
               </React.Fragment>
             ))}
           </Desc>
-          {project.member && (
-            <>
-              <Label>Members</Label>
-              <Members>
-                {project?.member.map((member) => (
-                  <Member>
-                    <MemberImage src={member.img} />
-                    <MemberName>{member.name}</MemberName>
-                    <a
-                      href={member.github}
-                      target="new"
-                      style={{ textDecoration: "none", color: "inherit" }}
-                    >
-                      <GitHub />
-                    </a>
-                    <a
-                      href={member.linkedin}
-                      target="new"
-                      style={{ textDecoration: "none", color: "inherit" }}
-                    >
-                      <LinkedIn />
-                    </a>
-                  </Member>
-                ))}
-              </Members>
-            </>
-          )}
           <ButtonGroup>
-            <Button dull href={project?.github} target="new">
-              View Code
-            </Button>
-            <Button href={project?.webapp} target="new">
-              View Live App
-            </Button>
+            {project?.private ? (
+              <Button disabled={true}>Closed Source</Button>
+            ) : (
+              <>
+                <Button dull href={project?.github} target="new">
+                  View Code
+                </Button>
+                <Button href={project?.webapp} target="new">
+                  View Live App
+                </Button>
+              </>
+            )}
           </ButtonGroup>
         </Wrapper>
       </Container>

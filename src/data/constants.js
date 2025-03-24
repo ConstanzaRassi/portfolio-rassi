@@ -205,7 +205,7 @@ export const experiences = [
     role: "Software Engineer",
     company: "SHIFTA",
     date: "Apr 2024 - Present",
-    desc: "Software engineer experienced in .NET",
+    desc: "Software engineer experienced in .NET. My responsibilities include: \n· Creation and development of APIs with microservice architecture.\n· Creating and maintaining APIs within a Microservices architecture.\n· Design and creation of SQL databases.",
     skills: [".NET", "Microservices", "SQL", "Quartz", "React", "Azure"],
   },
   {
@@ -271,7 +271,7 @@ export const education = [
 
 export const projects = [
   {
-    id: 9,
+    id: 1,
     title: "Vitamove",
     date: "Jan 2022 - Jul 2022",
     description:
@@ -291,6 +291,7 @@ export const projects = [
     category: "full stack",
     github: "https://github.com/ConstanzaRassi/PracticaSupervisada",
     webapp: "https://youtu.be/-XgbRnMy8q0",
+    private: false,
   },
   // {
   //   id: 0,
@@ -304,23 +305,9 @@ export const projects = [
   //   category: "full stack",
   //   github: "https://github.com/ConstanzaRassi/chatapplication",
   //   webapp: "https://podstream.netlify.app/",
-  //   // member: [
-  //   // {
-  //   //   name: "Rishav Chanda",
-  //   //   img: "https://avatars.githubusercontent.com/u/64485885?v=4",
-  //   //   linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
-  //   //   github: "https://github.com/rishavchanda/",
-  //   // },
-  //   // {
-  //   //   name: "Upasana Chaudhuri",
-  //   //   img: "https://avatars.githubusercontent.com/u/100614635?v=4",
-  //   //   linkedin: "https://www.linkedin.com/in/upasana-chaudhuri-2a2bb5231/",
-  //   //   github: "https://github.com/upasana0710",
-  //   // },
-  //   // ],
   // },
   {
-    id: 1,
+    id: 2,
     title: "English Tutors Argentina",
     date: "Aug 2021 - Nov 2021",
     description:
@@ -331,6 +318,21 @@ export const projects = [
     category: "front end",
     github: "https://github.com/NataliaTodesco/english-tutors",
     webapp: "https://elegant-euler-9b518f.netlify.app/",
+    private: false,
+  },
+  {
+    id: 3,
+    title: "NDC Integrations",
+    date: "Apr 2022 - Jan 2024",
+    description:
+      "NDC was a project that involved multiple initiatives. It focused on integrating the airlines' new 'NDC' service into the company's system, enabling agencies across the country to book and issue airline tickets more efficiently. One of the airlines selected us as the first company to implement this integration, and the project was successfully completed.\nIn addition to the technical challenges, the work included certifications with provider teams, security validations, use case creation, and training for all users nationwide who would be using the tool.",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/storage-general-1d716.appspot.com/o/mockups%2Fndc.png?alt=media&token=47338eb8-1b50-4d86-9b26-9f346705d9d8",
+    tags: [".NET", "MongoDB", "Angular", "SOAP", "JWT"],
+    category: "full stack",
+    github: "",
+    webapp: "",
+    private: true,
   },
 ];
 
