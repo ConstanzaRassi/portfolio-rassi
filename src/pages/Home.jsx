@@ -220,10 +220,10 @@ const HeroSection = () => {
         <HeroInnerContainer>
           <HeroLeftContainer id="Left">
             <Title>
-              Hi, I am <br /> {Bio.name}
+              Hi there, I'm <br /> {Bio.name}
             </Title>
             <TextLoop>
-              I am a<Span>Developer</Span>
+              <Span>Software</Span> Developer
             </TextLoop>
             <SubTitle>{Bio.description}</SubTitle>
             <ResumeButton onClick={() => openPdfInNewTab(cvpdf)}>
