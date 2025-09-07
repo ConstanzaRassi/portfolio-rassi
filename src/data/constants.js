@@ -2,7 +2,7 @@ export const Bio = {
   name: "Constanza Rassi",
   // roles: ["Developer", "Android Developer", "UI/UX Designer", "Programmer"],
   description:
-    "I am a passionate professional with a strong background in software development.",
+    "I'm a passionate professional with a strong background in software development.",
   cv: "https://drive.google.com/file/d/1yW2nMhyk6VuhTcY18Zv5EDS0YVUIAXAN/view?usp=sharing",
   image:
     "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/me.JPEG?alt=media&token=62e16dd7-37fc-49b3-a17c-efc2e16261ce",
@@ -205,8 +205,16 @@ export const experiences = [
     role: "Software Engineer",
     company: "SHIFTA",
     date: "Apr 2024 - Present",
-    desc: "Software engineer experienced in .NET. My responsibilities include: \n· Development and implementation of APIs with microservice architecture.\n· Design and creation of SQL databases.\n· Job scheduling with Quartz.",
-    skills: [".NET", "Microservices", "SQL", "Quartz", "React", "Azure"],
+    desc: "Software engineer experienced in .NET. My responsibilities include: \n· Development and implementation of APIs with microservice architecture.\n· Design and creation of SQL databases.\n· Collaboration on DevOps tasks with Azure.\n· Job scheduling with Quartz.\n· Participate in front-end development tasks using React | NextJs.\n· Developing clean and well-covered unit tests.",
+    skills: [
+      ".NET",
+      "Microservices",
+      "SQL",
+      "Quartz",
+      "React",
+      "Azure",
+      "NextJS",
+    ],
   },
   {
     id: 0,
