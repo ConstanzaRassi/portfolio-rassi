@@ -325,7 +325,7 @@ export const projects = [
     title: "NDC Integrations",
     date: "Apr 2022 - Jan 2024",
     description:
-      "NDC was a project that involved multiple initiatives. It focused on integrating the airlines' new 'NDC' service into the company's system, enabling agencies across the country to book and issue airline tickets more efficiently. One of the airlines selected us as the first company to implement this integration, and the project was successfully completed.\nIn addition to the technical challenges, the work included certifications with provider teams, security validations, use case creation, and training for all users nationwide who would be using the tool.",
+      "I led the NDC integration projects bringing airlines’ New Distribution Capability NDC into the company's system, enabling agencies across the country to book and issue airline tickets more efficiently. Copa Airlines selected us as the first company in Argentina to implement this integration, and the project was successfully completed. We also delivered integrations with LATAM Airlines, American Airlines, Iberia, British Airways, Avianca, and Sabre.\nIn addition to the technical challenges, the work included certifications with provider teams, security validations, use case creation, and training for all users nationwide who would be using the tool.",
     image:
       "https://firebasestorage.googleapis.com/v0/b/storage-general-1d716.appspot.com/o/mockups%2Fndc.png?alt=media&token=47338eb8-1b50-4d86-9b26-9f346705d9d8",
     tags: [".NET", "MongoDB", "Angular", "SOAP", "JWT"],
