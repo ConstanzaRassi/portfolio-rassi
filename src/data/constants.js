@@ -280,10 +280,52 @@ export const education = [
 export const projects = [
   {
     id: 1,
+    title: "Labor",
+    date: "Apr 2024 - Jul 2025",
+    description:
+      "Labor was a multi-initiative project for AESA-YPF focused on automating monthly labor and accounting workflows. The system centralizes file ingestion and data validation, applies complex business rules, and orchestrates large-scale calculations to reduce time and errors. To operate under high concurrency, it introduced background jobs that prevent blocking and ensure continuity.\n\nThe work also included independent test environments with real-world cases, along with configuration, deployment, and monitoring in Azure.",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/aesa.png?alt=media&token=ff37f743-495a-4764-95e9-e4d4e9324226",
+    tags: [".NET", "Entity Framework", "SQL", "React", "NextJS", "Azure", "Quartz", "XUnit", "OpenXML","JWT"],
+    category: "full stack",
+    github: "",
+    webapp: "",
+    private: true,
+  },
+  {
+    id: 2,
+    title: "NDC Integrations",
+    date: "Apr 2022 - Jan 2024",
+    description:
+      "I led the NDC integration projects bringing airlines’ New Distribution Capability NDC into the company's system, enabling agencies across the country to book and issue airline tickets more efficiently. Copa Airlines selected us as the first company in Argentina to implement this integration, and the project was successfully completed. We also delivered integrations with LATAM Airlines, American Airlines, Iberia, British Airways, Avianca, and Sabre.\n\nIn addition to the technical challenges, the work included certifications with provider teams, security validations, use case creation, and training for all users nationwide who would be using the tool.",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/storage-general-1d716.appspot.com/o/mockups%2Fndc.png?alt=media&token=47338eb8-1b50-4d86-9b26-9f346705d9d8",
+    tags: [".NET", "MongoDB", "Angular", "SOAP", "JWT", "Limestone Networks"],
+    category: "full stack",
+    github: "",
+    webapp: "",
+    private: true,
+  },
+  {
+    id: 3,
+    title: "English Tutors Argentina",
+    date: "Aug 2021 - Nov 2021",
+    description:
+      "English Tutors Arg is a customized project tailored for an English academy in Argentina. Beyond just providing class and fares information, the client wanted a platform with additional content like vocabulary, phrases, and expressions. They also requested an exercises section to appeal to potential users.\n\nTo address the teachers' need for assessing the proficiency levels of prospective students, an exam section was incorporated. This assessment, implemented through a Google Form, allows for a thorough evaluation. The result is a website that serves not only as an informative resource but also as an engaging space where learning and evaluation coexist",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/englishtutors-bg.png?alt=media&token=3070546e-512d-40ee-abbf-2176c5b56b67",
+    tags: ["Angular"],
+    category: "front end",
+    github: "https://github.com/NataliaTodesco/english-tutors",
+    webapp: "https://elegant-euler-9b518f.netlify.app/",
+    private: false,
+  },
+  {
+    id: 4,
     title: "Vitamove",
     date: "Jan 2022 - Jul 2022",
     description:
-      "Vitamove is the project I developed to present my university thesis in 2022. It is a website for a chain of gyms, where you can log in as an administrator or as a student. Various graphics and tables were designed for the administrator interface to manage data and statistics.\nFor the student interface, it includes basic functionalities such as class registration and viewing administrative status. Additionally, students can make payments for a plan using the Mercado Pago platform.\n As a final feature, there is an interactive 3D model of the human body with different muscle groups. This allows users to select specific muscle groups they want to work on and create a routine tailored to those muscles.",
+      "Vitamove is the project I developed to present my university thesis in 2022. It is a website for a chain of gyms, where you can log in as an administrator or as a student. Various graphics and tables were designed for the administrator interface to manage data and statistics.\n\nFor the student interface, it includes basic functionalities such as class registration and viewing administrative status. Additionally, students can make payments for a plan using the Mercado Pago platform.\n\n As a final feature, there is an interactive 3D model of the human body with different muscle groups. This allows users to select specific muscle groups they want to work on and create a routine tailored to those muscles.",
     image:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/vitamove-bg.png?alt=media&token=9a08a841-abee-4167-ab8d-70bb155180d7",
     tags: [
@@ -300,48 +342,7 @@ export const projects = [
     github: "https://github.com/ConstanzaRassi/PracticaSupervisada",
     webapp: "https://youtu.be/-XgbRnMy8q0",
     private: false,
-  },
-  // {
-  //   id: 0,
-  //   title: "Spark Talks",
-  //   date: "Jun 2023 - Oct 2023",
-  //   description:
-  //     "Spark Talks is a web application that enables users to engage in real-time chat with other registered users on the platform. With its user-friendly interface, the platform beckons you to effortlessly register and immerse yourself in real-time conversations with friends and contacts. Navigating the application is a breeze, thanks to its intuitively designed features. As a user, you can easily sign up and initiate conversations with your contacts. Dive into the chat feature that effortlessly supports image sharing, ensuring quick and convenient responses.",
-  //   image:
-  //     "https://user-images.githubusercontent.com/64485885/234602896-a1bd8bcc-b72b-4821-83d6-8ad885bf435e.png",
-  //   tags: ["React", "Firebase"],
-  //   category: "full stack",
-  //   github: "https://github.com/ConstanzaRassi/chatapplication",
-  //   webapp: "https://podstream.netlify.app/",
-  // },
-  {
-    id: 2,
-    title: "English Tutors Argentina",
-    date: "Aug 2021 - Nov 2021",
-    description:
-      "English Tutors Arg is a customized project tailored for an English academy in Argentina. Beyond just providing class and fares information, the client wanted a platform with additional content like vocabulary, phrases, and expressions. They also requested an exercises section to appeal to potential users.\nTo address the teachers' need for assessing the proficiency levels of prospective students, an exam section was incorporated. This assessment, implemented through a Google Form, allows for a thorough evaluation. The result is a website that serves not only as an informative resource but also as an engaging space where learning and evaluation coexist",
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/englishtutors-bg.png?alt=media&token=3070546e-512d-40ee-abbf-2176c5b56b67",
-    tags: ["Angular"],
-    category: "front end",
-    github: "https://github.com/NataliaTodesco/english-tutors",
-    webapp: "https://elegant-euler-9b518f.netlify.app/",
-    private: false,
-  },
-  {
-    id: 3,
-    title: "NDC Integrations",
-    date: "Apr 2022 - Jan 2024",
-    description:
-      "I led the NDC integration projects bringing airlines’ New Distribution Capability NDC into the company's system, enabling agencies across the country to book and issue airline tickets more efficiently. Copa Airlines selected us as the first company in Argentina to implement this integration, and the project was successfully completed. We also delivered integrations with LATAM Airlines, American Airlines, Iberia, British Airways, Avianca, and Sabre.\nIn addition to the technical challenges, the work included certifications with provider teams, security validations, use case creation, and training for all users nationwide who would be using the tool.",
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/storage-general-1d716.appspot.com/o/mockups%2Fndc.png?alt=media&token=47338eb8-1b50-4d86-9b26-9f346705d9d8",
-    tags: [".NET", "MongoDB", "Angular", "SOAP", "JWT"],
-    category: "full stack",
-    github: "",
-    webapp: "",
-    private: true,
-  },
+  }
 ];
 
 export const certifications = [
