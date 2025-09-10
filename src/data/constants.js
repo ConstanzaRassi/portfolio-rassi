@@ -164,16 +164,6 @@ export const skills = [
       //   image:
       //     "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/signalr-logo.svg?alt=media&token=20baa884-cf82-47d4-9d53-079c3a76b959",
       // },
-      // {
-      //   name: "VS Code",
-      //   image:
-      //     "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/vscode-logo.png?alt=media&token=3c933fc9-92e8-4dfb-90a1-72fbc544e878",
-      // },
-      // {
-      //   name: "Visual Studio",
-      //   image:
-      //     "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/vsstudio-logo.png?alt=media&token=dce3480a-7ce0-4aaa-a20a-05d3d2118666",
-      // },
       {
         name: "Postman",
         image:
@@ -289,7 +279,7 @@ export const projects = [
     image:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/aesa.png?alt=media&token=ff37f743-495a-4764-95e9-e4d4e9324226",
     tags: [".NET", "Entity Framework", "SQL", "React", "NextJS", "Azure", "Quartz", "XUnit", "OpenXML","JWT"],
-    category: "full stack",
+    category: "work",
     github: "",
     webapp: "",
     private: true,
@@ -303,7 +293,7 @@ export const projects = [
     image:
       "https://firebasestorage.googleapis.com/v0/b/storage-general-1d716.appspot.com/o/mockups%2Fndc.png?alt=media&token=47338eb8-1b50-4d86-9b26-9f346705d9d8",
     tags: [".NET", "MongoDB", "Angular", "SOAP", "JWT", "Limestone Networks"],
-    category: "full stack",
+    category: "work",
     github: "",
     webapp: "",
     private: true,
@@ -317,7 +307,7 @@ export const projects = [
     image:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/englishtutors-bg.png?alt=media&token=3070546e-512d-40ee-abbf-2176c5b56b67",
     tags: ["Angular"],
-    category: "front end",
+    category: "work",
     github: "https://github.com/NataliaTodesco/english-tutors",
     webapp: "https://elegant-euler-9b518f.netlify.app/",
     private: false,
@@ -340,7 +330,7 @@ export const projects = [
       "JQuery",
       "SketchFab",
     ],
-    category: "full stack",
+    category: "personal",
     github: "https://github.com/ConstanzaRassi/PracticaSupervisada",
     webapp: "https://youtu.be/-XgbRnMy8q0",
     private: false,
