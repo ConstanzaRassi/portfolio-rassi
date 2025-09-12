@@ -278,7 +278,7 @@ export const projects = [
       "Labor was a multi-initiative project for AESA-YPF focused on automating monthly labor and accounting workflows. The system centralizes file ingestion and data validation, applies complex business rules, and orchestrates large-scale calculations to reduce time and errors.\nTo operate under high concurrency, it introduced background jobs that prevent blocking and ensure continuity.\n\nThe work also included independent test environments with real-world cases, along with configuration, deployment, and monitoring in Azure.",
     image:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/aesa.png?alt=media&token=ff37f743-495a-4764-95e9-e4d4e9324226",
-    tags: [".NET", "Entity Framework", "SQL", "React", "NextJS", "Azure", "Quartz", "XUnit", "OpenXML","JWT"],
+    tags: [".NET", "Entity Framework", "SQL", "React", "NextJS", "Azure", "Quartz", "XUnit", "OpenXML", "JWT"],
     category: "work",
     github: "",
     webapp: "",
@@ -300,6 +300,20 @@ export const projects = [
   },
   {
     id: 3,
+    title: "Binance-Integrated Payments",
+    date: "Aug 2022 - Dec 2022",
+    description:
+      "Designed and built a cryptocurrency payment platform integrating Binance APIs, which allowed users to make transactions and payments with various cryptocurrencies. Implemented secure authentication, transaction tracking, real-time price updates, and error handling with retries.\n\nManaged the end-to-end integration and deployment (API key management, environment setup, monitoring/alerts, and audit logs) on a scalable architecture. Successfully implemented the platform, resulting in increased transaction volume and improved user experience.",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/binance-bg.jpg?alt=media&token=0d68bd36-3297-412b-8810-dc92c6ab952b",
+    tags: [".NET", "MongoDB", "REST", "Binance API", "Web Socket", "Angular", "JavaScript", "JWT"],
+    category: "work",
+    github: "",
+    webapp: "",
+    private: true,
+  },
+  {
+    id: 4,
     title: "English Tutors Argentina",
     date: "Aug 2021 - Nov 2021",
     description:
@@ -313,7 +327,7 @@ export const projects = [
     private: false,
   },
   {
-    id: 4,
+    id: 5,
     title: "Vitamove",
     date: "Jan 2022 - Jul 2022",
     description:
