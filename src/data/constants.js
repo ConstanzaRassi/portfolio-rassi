@@ -191,13 +191,20 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
+    img: "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/meli-logo.jpg?alt=media&token=7e67c781-6eb6-4267-94c2-0d9d61387918",
+    role: "Software Engineer",
+    company: "Mercado Libre",
+    date: "Feb 2026 - Present",
+  },
+  {
+    id: 1,
     img: "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/shifta-logo.png?alt=media&token=f79015c7-624e-44c6-bd91-57b566ea7c9b",
     role: "Software Engineer",
     company: "SHIFTA",
-    date: "Apr 2024 - Present",
-    desc: "Software engineer experienced in .NET. My responsibilities include: \n· Development and implementation of APIs with microservice architecture.\n· Design and creation of SQL databases.\n· Collaboration on DevOps tasks with Azure.\n· Job scheduling with Quartz.\n· Participate in front-end development tasks using React | NextJs.\n· Developing clean and well-covered unit tests.",
+    date: "Apr 2024 - Jan 2026",
+    desc: "My responsibilities have included: \n· Development and implementation of APIs with microservice architecture in .NET.\n· Design and creation of SQL databases.\n· Collaboration on DevOps tasks with Azure.\n· Job scheduling with Quartz.\n· Analysis of different business workflows to design application architecture and code structure.\n· Participate in front-end development tasks using React | NextJs.\n· Developing clean and well-covered unit tests with XUnit and Moq.",
     skills: [
-      ".NET",
+      ".NET Core",
       "Microservices",
       "SQL",
       "Quartz",
@@ -209,14 +216,14 @@ export const experiences = [
     ],
   },
   {
-    id: 0,
+    id: 2,
     img: "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/jt-logo.jpg?alt=media&token=2b79f9f4-70b5-48c6-976a-25f0b3cbbc6b",
     role: "Software Developer",
     company: "Juan Toselli International Tours",
     date: "Feb 2022 - Mar 2024",
-    desc: "Software developer with a .NET focus. My responsibilities have included:\n· Leading projects for the integration of supplier Web Services (SOAP/Rest) into the company's system.\n· Creating and maintaining APIs within a Microservices architecture.\n· Designing and creating SQL databases.\n· Crafting scripts for scheduled tasks using JavaScript and MongoDB. \n· Implementing payment platforms, e.g. Binance.\n· Collaborating on front-end projects using Angular.",
+    desc: "My responsibilities have included:\n· Leading projects for the integration of supplier Web Services (SOAP/Rest) into the company's system.\n· Migration from a monolithic system to a microservices-based architecture in .NET.\n· Designing and creating SQL databases.\n· Crafting scripts for scheduled tasks using JavaScript and MongoDB. \n· Implementing payment platforms, e.g. Binance.\n· Deployment and monitoring with Limestone and DigitalOcean.\n· Collaborating on front-end projects using Angular.",
     skills: [
-      ".NET",
+      ".NET Core",
       "Microservices",
       "MongoDB",
       "SQL",
@@ -230,12 +237,12 @@ export const experiences = [
     ],
   },
   {
-    id: 1,
+    id: 3,
     img: "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/globant-logo.png?alt=media&token=ada0a12d-955c-49af-a3ce-fbd99569a470",
     role: "QA Internship",
     company: "Globant",
     date: "Sep 2019 - Oct 2019",
-    desc: "Completed an internship supporting the QA and testing team by performing various simple tasks to aid their daily operations.",
+    desc: "Completed a school-sponsored internship during my final year of high school, supporting the QA and Testing team by performing various simple tasks to assist with their daily operations.",
     skills: [],
   },
 ];
@@ -278,7 +285,18 @@ export const projects = [
       "Labor was a multi-initiative project for AESA-YPF focused on automating monthly labor and accounting workflows. The system centralizes file ingestion and data validation, applies complex business rules, and orchestrates large-scale calculations to reduce time and errors.\nTo operate under high concurrency, it introduced background jobs that prevent blocking and ensure continuity.\n\nThe work also included independent test environments with real-world cases, along with configuration, deployment, and monitoring in Azure.",
     image:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/aesa.png?alt=media&token=ff37f743-495a-4764-95e9-e4d4e9324226",
-    tags: [".NET", "Entity Framework", "SQL", "React", "NextJS", "Azure", "Quartz", "XUnit", "OpenXML", "JWT"],
+    tags: [
+      ".NET",
+      "Entity Framework",
+      "SQL",
+      "React",
+      "NextJS",
+      "Azure",
+      "Quartz",
+      "XUnit",
+      "OpenXML",
+      "JWT",
+    ],
     category: "work",
     github: "",
     webapp: "",
@@ -306,7 +324,16 @@ export const projects = [
       "Designed and built a cryptocurrency payment platform integrating Binance APIs, which allowed users to make transactions and payments with various cryptocurrencies. Implemented secure authentication, transaction tracking, real-time price updates, and error handling with retries.\n\nManaged the end-to-end integration and deployment (API key management, environment setup, monitoring/alerts, and audit logs) on a scalable architecture. Successfully implemented the platform, resulting in increased transaction volume and improved user experience.",
     image:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/binance-bg.jpg?alt=media&token=0d68bd36-3297-412b-8810-dc92c6ab952b",
-    tags: [".NET", "MongoDB", "REST", "Binance API", "Web Socket", "Angular", "JavaScript", "JWT"],
+    tags: [
+      ".NET",
+      "MongoDB",
+      "REST",
+      "Binance API",
+      "Web Socket",
+      "Angular",
+      "JavaScript",
+      "JWT",
+    ],
     category: "work",
     github: "",
     webapp: "",
@@ -348,26 +375,38 @@ export const projects = [
     github: "https://github.com/ConstanzaRassi/PracticaSupervisada",
     webapp: "https://youtu.be/-XgbRnMy8q0",
     private: false,
-  }
+  },
 ];
 
 export const certifications = [
   {
     id: 0,
+    title: "Devops Diploma",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/storage-general-1d716.appspot.com/o/images%2Fcert.jpg?alt=media&token=de96ad6f-ea70-4e5f-b1dd-e8a9518802de",
+  },
+  {
+    id: 1,
+    title: "High Concurrency",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/high-concurrency-certification.jpg?alt=media&token=390ad6f1-45db-4493-815b-0a048eeb0a20",
+  },
+  {
+    id: 2,
+    title: "AI for Work",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/ai-for-work-certification.jpg?alt=media&token=75244d3d-3ec3-4664-abbf-8de217a16cb5",
+  },
+  {
+    id: 3,
     title: "Scrum Fundamentals",
     image:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/scrum-certification.jpg?alt=media&token=c69dc241-b373-4e98-bc09-74462b701c14",
   },
   {
-    id: 1,
+    id: 4,
     title: "Git Basics",
     image:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/git-certification.jpg?alt=media&token=d090ee6d-e261-4912-a70e-c6db5d811b33",
-  },
-  {
-    id: 3,
-    title: "Devops Diploma",
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/storage-general-1d716.appspot.com/o/images%2Fcert.jpg?alt=media&token=de96ad6f-ea70-4e5f-b1dd-e8a9518802de",
   },
 ];
