@@ -16,34 +16,45 @@ const Button = styled.button`
 `;
 const Card = styled.div`
   width: 300px;
-  height: 260px;
+  height: 280px;
   background-color: ${({ theme }) => theme.card};
   cursor: pointer;
   border-radius: 10px;
   box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.4);
   overflow: hidden;
-  padding: 26px 20px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  justify-content: space-between;
   transition: all 0.5s ease-in-out;
-  align-items: center,
+  align-items: center;
+
   &:hover {
     transform: translateY(-10px);
     box-shadow: 0 0 50px 4px rgba(0, 0, 0, 0.6);
     filter: brightness(1.1);
   }
+
   &:hover ${Button} {
     display: block;
   }
 `;
-
-const Image = styled.img`
+const ImageContainer = styled.div`
   width: 100%;
-  height: 180px;
+  height: 150px;
   background-color: ${({ theme }) => theme.white};
   border-radius: 10px;
   box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+`;
+
+const Image = styled.img`
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
 `;
 
 const Details = styled.div`
@@ -74,7 +85,9 @@ const CertificationCards = ({ certification, setOpenModalCert }) => {
         setOpenModalCert({ state: true, certification: certification })
       }
     >
-      <Image src={certification.image} />
+      <ImageContainer>
+        <Image src={certification.image} />
+      </ImageContainer>
       <Details>
         <Title>{certification.title}</Title>
       </Details>
