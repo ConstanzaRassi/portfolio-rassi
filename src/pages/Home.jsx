@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import HeroBgAnimation from "../components/HomeAnimation";
 import { Bio } from "../data/constants";
-import cvpdf from "../data/RASSI-Cv.pdf";
+import cvpdf from "../data/CV_Rassi.pdf";
+import cvats from "../data/CV_Rassi_ATS.pdf";
 import me from "../assets/me.JPEG";
 import styled from "styled-components";
-// import _default from "../themes/default";
 
 const HeroContainer = styled.div`
   background: ${({ theme }) => theme.card_light};
@@ -172,44 +172,137 @@ const SubTitle = styled.div`
 `;
 
 const ResumeButton = styled.a`
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-    text-decoration: none;
-    width: 95%;
-    max-width: 300px;
-    text-align: center;
-    padding: 16px 0;
-    color:${({ theme }) => theme.white};
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: 600;
-    transition: all 0.2s ease-in-out !important;
-    background: hsla(271, 100%, 50%, 1);
-    background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    background: -moz-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    background: -webkit-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    box-shadow:  20px 20px 60px #1F2634,
-    -20px -20px 60px #1F2634;
-    &:hover {
-        transform: scale(1.05);
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
+  width: 95%;
+  max-width: 300px;
+  text-align: center;
+  padding: 16px 0;
+  color: ${({ theme }) => theme.white};
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out !important;
+  background: hsla(271, 100%, 50%, 1);
+  background: linear-gradient(
+    225deg,
+    hsla(271, 100%, 50%, 1) 0%,
+    hsla(294, 100%, 50%, 1) 100%
+  );
+  background: -moz-linear-gradient(
+    225deg,
+    hsla(271, 100%, 50%, 1) 0%,
+    hsla(294, 100%, 50%, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    225deg,
+    hsla(271, 100%, 50%, 1) 0%,
+    hsla(294, 100%, 50%, 1) 100%
+  );
+  box-shadow: 20px 20px 60px #1f2634, -20px -20px 60px #1f2634;
+  &:hover {
+    transform: scale(1.05);
     transition: all 0.4s ease-in-out;
-    box-shadow:  20px 20px 60px #1F2634,
+    box-shadow: 20px 20px 60px #1f2634;
     filter: brightness(1);
-    }    
-    
-    
-    @media (max-width: 640px) {
-        padding: 12px 0;
-        font-size: 18px;
-    } 
+  }
 
+  @media (max-width: 640px) {
+    padding: 12px 0;
+    font-size: 18px;
+  }
 `;
+
+const ResumeActions = styled.div`
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 95%;
+  max-width: 360px;
+
+  @media (max-width: 960px) {
+    justify-content: center;
+  }
+`;
+
+const MenuButton = styled.button`
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  border: 1px solid ${({ theme }) => theme.text_primary + 20};
+  background: ${({ theme }) => theme.card_light};
+  color: ${({ theme }) => theme.text_primary};
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  line-height: 1;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+`;
+
+const DropdownMenu = styled.div`
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 100%;
+  margin-left: -140px;
+  min-width: 190px;
+  background: ${({ theme }) => theme.card_light};
+  border: 1px solid ${({ theme }) => theme.text_primary + 20};
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  padding: 8px;
+  z-index: 10;
+`;
+
+const MenuItem = styled.button`
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: none;
+  color: ${({ theme }) => theme.text_primary};
+  padding: 10px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+
+  &:hover {
+    background: ${({ theme }) => theme.text_primary + 12};
+  }
+`;
+
 const HeroSection = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const menuRef = useRef(null);
+
   const openPdfInNewTab = (pdfPath) => {
-    window.open(pdfPath, "_blank");
+    window.open(pdfPath, "_blank", "noopener,noreferrer");
   };
+
+  useEffect(() => {
+    const onMouseDown = (e) => {
+      if (menuRef.current && !menuRef.current.contains(e.target)) {
+        setMenuOpen(false);
+      }
+    };
+    const onKeyDown = (e) => {
+      if (e.key === "Escape") setMenuOpen(false);
+    };
+
+    document.addEventListener("mousedown", onMouseDown);
+    document.addEventListener("keydown", onKeyDown);
+    return () => {
+      document.removeEventListener("mousedown", onMouseDown);
+      document.removeEventListener("keydown", onKeyDown);
+    };
+  }, []);
 
   return (
     <div id="about">
@@ -226,9 +319,37 @@ const HeroSection = () => {
               <Span>Software</Span> Developer
             </TextLoop>
             <SubTitle>{Bio.description}</SubTitle>
-            <ResumeButton onClick={() => openPdfInNewTab(cvpdf)}>
-              Check Resume
-            </ResumeButton>
+
+            <ResumeActions ref={menuRef}>
+              <ResumeButton onClick={() => openPdfInNewTab(cvpdf)}>
+                Check CV
+              </ResumeButton>
+
+              <MenuButton
+                type="button"
+                aria-label="More resume options"
+                aria-haspopup="menu"
+                aria-expanded={menuOpen}
+                onClick={() => setMenuOpen((v) => !v)}
+              >
+                ⋮
+              </MenuButton>
+
+              {menuOpen && (
+                <DropdownMenu role="menu">
+                  <MenuItem
+                    type="button"
+                    role="menuitem"
+                    onClick={() => {
+                      setMenuOpen(false);
+                      openPdfInNewTab(cvats);
+                    }}
+                  >
+                    CV ATS Version
+                  </MenuItem>
+                </DropdownMenu>
+              )}
+            </ResumeActions>
           </HeroLeftContainer>
 
           <HeroRightContainer id="Right">
