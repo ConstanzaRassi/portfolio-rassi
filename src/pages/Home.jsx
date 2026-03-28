@@ -1,9 +1,8 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import HeroBgAnimation from "../components/HomeAnimation";
 import { Bio } from "../data/constants";
 import cvpdf from "../data/CV_Rassi.pdf";
 import cvats from "../data/CV_Rassi_ATS.pdf";
-import me from "../assets/me.JPEG";
 import styled from "styled-components";
 
 const HeroContainer = styled.div`
@@ -202,7 +201,9 @@ const ResumeButton = styled.a`
     hsla(271, 100%, 50%, 1) 0%,
     hsla(294, 100%, 50%, 1) 100%
   );
-  box-shadow: 20px 20px 60px #1f2634, -20px -20px 60px #1f2634;
+  box-shadow:
+    20px 20px 60px #1f2634,
+    -20px -20px 60px #1f2634;
   &:hover {
     transform: scale(1.05);
     transition: all 0.4s ease-in-out;
@@ -316,7 +317,7 @@ const HeroSection = () => {
               Hi there, I'm <br /> {Bio.name}
             </Title>
             <TextLoop>
-              <Span>Software</Span> Developer
+              <Span>Software</Span> Engineer
             </TextLoop>
             <SubTitle>{Bio.description}</SubTitle>
 
@@ -353,7 +354,7 @@ const HeroSection = () => {
           </HeroLeftContainer>
 
           <HeroRightContainer id="Right">
-            <Img src={me} alt="hero-image" />
+            <Img src={Bio.image} alt="hero-image" />
           </HeroRightContainer>
         </HeroInnerContainer>
       </HeroContainer>
