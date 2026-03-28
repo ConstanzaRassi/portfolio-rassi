@@ -1,6 +1,5 @@
 export const Bio = {
   name: "Constanza Rassi",
-  // roles: ["Developer", "Android Developer", "UI/UX Designer", "Programmer"],
   description:
     "I'm a passionate professional with a strong background in software development.",
   cv: "https://drive.google.com/file/d/1yW2nMhyk6VuhTcY18Zv5EDS0YVUIAXAN/view?usp=sharing",
@@ -253,7 +252,7 @@ export const education = [
     img: "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/unc-logo.png?alt=media&token=7fb9684c-a77b-4d36-8f41-af7f88d87e25",
     school: "National University of Cordoba",
     date: "Jan 2024 - Oct 2024",
-    desc: "The diploma addresses the comprehensive cloud software development (with a focus on AWS services) including security, database, monitoring tools, IAC. It covers key concepts in the ICT industry, such as continuous integration and continuous delivery using Docker and Kubernetes.",
+    desc: "The diploma addresses the comprehensive cloud software development including security, database, monitoring tools, IAC. It covers key concepts in the ICT industry, such as continuous integration and continuous delivery using Docker and Kubernetes.",
     degree: "Diploma in DevOps",
   },
   {
