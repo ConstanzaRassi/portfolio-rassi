@@ -44,7 +44,12 @@ export const skills = [
       {
         name: "Quartz",
         image:
-          "https://firebasestorage.googleapis.com/v0/b/storage-general-1d716.appspot.com/o/logos%2Fquartz_logo.png?alt=media&token=8b630062-9687-4798-ac31-a4062669f598",
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/quartz_logo.png?alt=media&token=8a40ecb9-ac14-470b-bc78-fff64e555459",
+      },
+      {
+        name: "GO",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/go-logo.png?alt=media&token=e97a2b9f-24ab-47e5-b630-3aaeb6ea1873",
       },
     ],
   },
@@ -156,7 +161,7 @@ export const skills = [
       {
         name: "AWS",
         image:
-          "https://firebasestorage.googleapis.com/v0/b/storage-general-1d716.appspot.com/o/logos%2Faws-logo.png?alt=media&token=d1266233-1d4a-4397-b790-35812a6ce838",
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/aws-logo.png?alt=media&token=3751b87c-b599-4fbf-85e2-7c24d2960916",
       },
       // {
       //   name: "SignalR",
@@ -193,7 +198,18 @@ export const experiences = [
     img: "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/meli-logo.jpg?alt=media&token=7e67c781-6eb6-4267-94c2-0d9d61387918",
     role: "Software Engineer",
     company: "Mercado Libre",
+    desc: "My responsibilities include: \n· Developing and maintaining Java microservices on high-availability architectures using MySQL HA, HikariCP, and JDBC.\n· Implementing resilience patterns, including circuit breakers, graceful shutdown, and connection pooling tuning.\n· Instrumenting traces and metrics using the OpenTelemetry standard, with visualization and monitoring through Datadog, Grafana, and Kibana.\n· Reducing technical debt through refactoring and maintainability improvements.\n· Managing event/stream processing.\n· Addressing security vulnerabilities, including endpoint hardening and IDOR vulnerabilities.\n· Using the company's internal CI/CD platform for continuous microservices deployment.",
     date: "Feb 2026 - Present",
+    skills: [
+      "Java",
+      "Go",
+      "MySQL",
+      "Microservices",
+      "Stream messages",
+      "OTEL",
+      "Datadog",
+      "Grafana",
+    ],
   },
   {
     id: 1,
@@ -308,7 +324,7 @@ export const projects = [
     description:
       "I led the NDC integration projects bringing airlines’ New Distribution Capability NDC into the company's system, enabling agencies across the country to book and issue airline tickets more efficiently.\nCopa Airlines selected us as the first company in Argentina to implement this integration, and the project was successfully completed. We also delivered integrations with LATAM Airlines, American Airlines, Iberia, British Airways, Avianca, and Sabre.\n\nIn addition to the technical challenges, the work included certifications with provider teams, security validations, use case creation, and training for all users nationwide who would be using the tool.",
     image:
-      "https://firebasestorage.googleapis.com/v0/b/storage-general-1d716.appspot.com/o/mockups%2Fndc.png?alt=media&token=47338eb8-1b50-4d86-9b26-9f346705d9d8",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/ndc-bg.png?alt=media&token=6933ce17-f0a5-480e-ad57-f9e98581e6aa",
     tags: [".NET", "MongoDB", "Angular", "SOAP", "JWT", "Limestone Networks"],
     category: "work",
     github: "",
@@ -382,7 +398,7 @@ export const certifications = [
     id: 0,
     title: "Devops Diploma",
     image:
-      "https://firebasestorage.googleapis.com/v0/b/storage-general-1d716.appspot.com/o/images%2Fcert.jpg?alt=media&token=de96ad6f-ea70-4e5f-b1dd-e8a9518802de",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-rassi.appspot.com/o/devops-certificado.png?alt=media&token=da3aedaa-9830-4597-b59f-b006a9c46a83",
   },
   {
     id: 1,

@@ -32,6 +32,7 @@ const Span = styled.span`
   -webkit-box-orient: unset;
   text-overflow: unset;
   white-space: pre-wrap;
+  line-height: 1.7;
 `;
 
 const Card = styled.div`
